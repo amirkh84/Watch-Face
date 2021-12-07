@@ -8,7 +8,7 @@ html {
 }
 * {
     box-sizing: border-box;
-    font-family: Montserrat-thin;
+    font-family: sans-serif;
 }
 body {
     height: 100%;
