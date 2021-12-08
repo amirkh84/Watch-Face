@@ -122,7 +122,7 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
-    right: -40px;
+    right: -35px;
 }
 .buttons button {
     border: none;
@@ -130,6 +130,20 @@ body {
     height: 20px;
     border-radius: 50px;
     margin: 5px;
+}
+.btn5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px !important;
+    height: 30px !important;
+}
+.icon {
+    font-size: 20px;
+    color: #202020;
+}
+.icon-light {
+    color: #EDEDED;
 }
 .btn1 {
     background-color: #DA0037;
@@ -161,4 +175,8 @@ body {
 }
 .lightgreen-number {
     color: black !important;
+}
+.btn5 {
+    position: absolute;
+    bottom: -90px;
 }

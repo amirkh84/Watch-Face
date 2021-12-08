@@ -86,6 +86,8 @@ function dark2() {
     hh.classList.toggle("light-hour");
     let dayirr = document.getElementById("day-iran");
     dayirr.classList.toggle("light-hour");
+    let ico = document.getElementById("icon");
+    ico.classList.toggle("icon-light");
 }
 let options = {month: 'numeric'};
 month = new Date().toLocaleDateString('fa-IR', options).replace(/([۰-۹])/g, token => String.fromCharCode(token.charCodeAt(0) - 1728));
