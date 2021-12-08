@@ -42,3 +42,44 @@ switch (day) {
     document.getElementById("day").innerHTML = output;
     break;
 }
+function theme() {
+    document.getElementById("circle").style.backgroundColor = "#DA0037";
+    document.getElementById("hour").style.color = "black";
+    let rem = document.getElementById("hour");
+    rem.classList.remove("lightgreen-number")
+}
+function theme1() {
+    document.getElementById("circle").style.backgroundColor = "#7300b6";
+    document.getElementById("hour").style.color = "black";
+    let rem = document.getElementById("hour");
+    rem.classList.remove("lightgreen-number")
+}
+function theme2() {
+    document.getElementById("circle").style.backgroundColor = "#0016da";
+    document.getElementById("hour").style.color = "#eeff00";
+    let rem = document.getElementById("hour");
+    rem.classList.remove("lightgreen-number")
+}
+function theme3() {
+    document.getElementById("circle").style.backgroundColor = "#00da62";
+    document.getElementById("hour").style.color = "black";
+    let lightgreen = document.getElementById("hour");
+    lightgreen.classList.add("lightgreen-number")
+}
+function dark() {
+    document.getElementById("circle").style.backgroundColor = "#00da62";
+    let body = document.body;
+    body.style.backgroundColor = "#F2EFEA";
+}
+function dark2() {
+    let clk = document.getElementById("clk-body");
+    clk.classList.toggle("light-mode");
+    let mnt = document.getElementById("minute");
+    mnt.classList.toggle("light-text");
+    let body = document.body;
+    body.classList.toggle("light-body");
+    let btn = document.getElementById("color-btn5");
+    btn.classList.toggle("btn-light");
+    let hh = document.getElementById("hour");
+    hh.classList.toggle("light-hour");
+}

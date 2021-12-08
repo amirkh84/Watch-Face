@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <div class="clock-body">
+    <div class="clock-body" id="clk-body">
         <div class="top-bar">
             <h3>CLOCK</h3>
         </div>
         <div class="main">
-            <div class="circle">
+            <div class="circle" id="circle">
                 <p id="hour"></p>
             </div>
             <div class="minute">
@@ -24,6 +24,13 @@
             <p id="day"></p>
         </div>
     </div>
+    <section class="buttons">
+    <button onclick="theme()" class="btn1"></button>
+    <button onclick="theme1()" class="btn2"></button>
+    <button onclick="theme2()" class="btn3"></button>
+    <button onclick="theme3()" class="btn4"></button>
+    <button onclick="dark2()" id="color-btn5" class="btn5"></button>
+    </section>
     <script src="assets/javascript/clock.js"></script>
 </body>
 </html>

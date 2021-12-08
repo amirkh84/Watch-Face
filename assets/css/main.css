@@ -9,6 +9,7 @@ html {
 * {
     box-sizing: border-box;
     font-family: sans-serif;
+    transition: 250ms;
 }
 body {
     height: 100%;
@@ -77,4 +78,47 @@ body {
     margin: 0px;
     text-align: center;
     color: #EDEDED;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+
+}
+.buttons button {
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin: 5px;
+}
+.btn1 {
+    background-color: #DA0037;
+}
+.btn2 {
+    background-color: #7300b6;
+}
+.btn3 {
+    background-color: #0016da;
+}
+.btn4 {
+    background-color: #00da62;
+}
+.light-mode {
+    background-color: #F2EFEA;
+    box-shadow: 0px 0px 15px gray;
+}
+.light-text {
+    color: black !important;
+}
+.light-body {
+    background-color: #F2EFEA;
+}
+.btn-light {
+    background-color: #171717;
+}
+.light-hour {
+    color: #F2EFEA !important;
+}
+.lightgreen-number {
+    color: black !important;
 }
