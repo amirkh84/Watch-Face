@@ -20,6 +20,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .clock-body {
     width: 250px;
@@ -33,11 +34,28 @@ body {
     box-shadow: 0px 0px 25px #111111;
     border: 2px solid black;
 }
+.date-body2 {
+    width: 250px;
+    height: 250px;
+    background-color: #202020;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    box-shadow: 0px 0px 25px #111111;
+    border: 2px solid black;
+    margin-top: 20px;
+}
 .top-bar {
     position: absolute;
     top: 8px;
 }
 .bottom-bar {
+    position: absolute;
+    bottom: 8px;
+}
+.bottom-bar2 {
     position: absolute;
     bottom: 8px;
 }
@@ -49,6 +67,11 @@ body {
     color: #444444;
     margin: 0px;
 }
+.bottom-bar2 p {
+    color: #444444;
+    margin: 0px;
+    font-size: 25px;
+}
 .circle {
     width: 100px;
     height: 100px;
@@ -58,8 +81,24 @@ body {
     justify-content: center;
     align-items: center;
 }
+.circle-date {
+    width: 150px;
+    height: 150px;
+    background-color: #DA0037;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .circle p {
     font-size: 70px;
+    margin: 0px;
+    text-align: center;
+    color: #000000;
+}
+.circle-date p {
+    font-size: 80px;
+    font-weight: bold;
     margin: 0px;
     text-align: center;
     color: #000000;
@@ -80,9 +119,10 @@ body {
     color: #EDEDED;
 }
 .buttons {
+    position: absolute;
     display: flex;
     flex-direction: column;
-
+    right: -40px;
 }
 .buttons button {
     border: none;

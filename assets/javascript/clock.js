@@ -74,6 +74,8 @@ function dark() {
 function dark2() {
     let clk = document.getElementById("clk-body");
     clk.classList.toggle("light-mode");
+    let date2 = document.getElementById("date-body2");
+    date2.classList.toggle("light-mode");
     let mnt = document.getElementById("minute");
     mnt.classList.toggle("light-text");
     let body = document.body;
@@ -82,4 +84,73 @@ function dark2() {
     btn.classList.toggle("btn-light");
     let hh = document.getElementById("hour");
     hh.classList.toggle("light-hour");
+    let dayirr = document.getElementById("day-iran");
+    dayirr.classList.toggle("light-hour");
+}
+let options = {month: 'numeric'};
+month = new Date().toLocaleDateString('fa-IR', options).replace(/([۰-۹])/g, token => String.fromCharCode(token.charCodeAt(0) - 1728));
+switch (month) {
+    case "1": var dayy = "Farvardin";
+    break;
+    case "2": var dayy = "Ordibehesht";
+    break;
+    case "3": var dayy = "Khordad";
+    break;
+    case "4": var dayy = "Tir";
+    break;
+    case "5": var dayy = "Mordad";
+    break;
+    case "6": var dayy = "Shahrivar";
+    break;
+    case "7": var dayy = "Mehr";
+    break;
+    case "8": var dayy = "Aban";
+    break;
+    case "9": var dayy = "Azar";
+    break;
+    case "10": var dayy = "Dey";
+    break;
+    case "11": var dayy = "Bahman";
+    break;
+    case "12": var dayy = "Esfand";
+    break;
+    default: var dayy = "Error 404";
+    break;
+}
+document.getElementById("month").innerHTML = dayy;
+let dds = {day: 'numeric'};
+function iransdate() {
+    imday = new Date().toLocaleDateString('fa-IR', dds).replace(/([۰-۹])/g, token => String.fromCharCode(token.charCodeAt(0) - 1728));
+    document.getElementById("day-iran").innerHTML = imday;
+}
+iransdate();
+setInterval (iransdate , 1000);
+function themed() {
+    document.getElementById("circle-date").style.backgroundColor = "#DA0037";
+    document.getElementById("day-iran").style.color = "black";
+    let rem = document.getElementById("day-iran");
+    rem.classList.remove("lightgreen-number")
+}
+function themed1() {
+    document.getElementById("circle-date").style.backgroundColor = "#7300b6";
+    document.getElementById("day-iran").style.color = "black";
+    let rem = document.getElementById("day-iran");
+    rem.classList.remove("lightgreen-number")
+}
+function themed2() {
+    document.getElementById("circle-date").style.backgroundColor = "#0016da";
+    document.getElementById("day-iran").style.color = "#eeff00";
+    let rem = document.getElementById("day-iran");
+    rem.classList.remove("lightgreen-number")
+}
+function themed3() {
+    document.getElementById("circle-date").style.backgroundColor = "#00da62";
+    document.getElementById("day-iran").style.color = "black";
+    let lightgreen = document.getElementById("day-iran");
+    lightgreen.classList.add("lightgreen-number")
+}
+function dark() {
+    document.getElementById("circle-date").style.backgroundColor = "#00da62";
+    let body = document.body;
+    body.style.backgroundColor = "#F2EFEA";
 }
