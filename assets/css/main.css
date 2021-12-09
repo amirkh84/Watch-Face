@@ -206,6 +206,9 @@ body {
 .colors4 {
     color: #007032;
 }
+.colors5 {
+    color: #0000007a;
+}
 /* .......................... */
 .btn5 {
     display: flex;
@@ -232,6 +235,9 @@ body {
 }
 .btn4 {
     background-color: #00da62;
+}
+.btn6 {
+    background-color: #f48c06;
 }
 .light-mode {
     background-color: #F2EFEA;

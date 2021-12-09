@@ -66,6 +66,12 @@ function theme3() {
     let lightgreen = document.getElementById("hour");
     lightgreen.classList.add("lightgreen-number")
 }
+function theme4() {
+    document.getElementById("circle").style.backgroundColor = "#f48c06";
+    document.getElementById("hour").style.color = "black";
+    let lightgreen2 = document.getElementById("hour");
+    lightgreen2.classList.remove("lightgreen-number")
+}
 function dark() {
     document.getElementById("circle").style.backgroundColor = "#00da62";
     let body = document.body;
@@ -157,6 +163,12 @@ function themed3() {
     let lightgreen = document.getElementById("day-iran");
     lightgreen.classList.add("lightgreen-number")
 }
+function themed4() {
+    document.getElementById("circle-date").style.backgroundColor = "#f48c06";
+    document.getElementById("day-iran").style.color = "black";
+    let lightgreen2 = document.getElementById("day-iran");
+    lightgreen2.classList.remove("lightgreen-number")
+}
 function dark() {
     document.getElementById("circle-date").style.backgroundColor = "#00da62";
     let body = document.body;
@@ -194,6 +206,12 @@ function themey3() {
     let lightgreen = document.getElementById("year-miladi");
     lightgreen.classList.add("lightgreen-number")
 }
+function themey4() {
+    document.getElementById("circle-year").style.backgroundColor = "#f48c06";
+    document.getElementById("year-miladi").style.color = "black";
+    let lightgreen2 = document.getElementById("year-miladi");
+    lightgreen2.classList.remove("lightgreen-number")
+}
 function theme10() {
     document.getElementById("circle-year2").style.backgroundColor = "#DA0037";
     document.getElementById("year-shamsi").style.color = "black";
@@ -217,4 +235,10 @@ function theme13() {
     document.getElementById("year-shamsi").style.color = "black";
     let lightgreen = document.getElementById("year-shamsi");
     lightgreen.classList.add("lightgreen-number")
+}
+function theme14() {
+    document.getElementById("circle-year2").style.backgroundColor = "#f48c06";
+    document.getElementById("year-shamsi").style.color = "black";
+    let lightgreen2 = document.getElementById("year-shamsi");
+    lightgreen2.classList.remove("lightgreen-number")
 }
