@@ -22,6 +22,12 @@ body {
     align-items: center;
     flex-direction: column;
 }
+@media screen and (max-height: 801px){
+    body {
+        height: 150%;
+    }
+
+}
 .clock-body {
     width: 250px;
     height: 250px;
@@ -46,6 +52,22 @@ body {
     box-shadow: 0px 0px 25px #111111;
     border: 2px solid black;
     margin-top: 20px;
+}
+.year-body {
+    width: 250px;
+    height: 250px;
+    background-color: #202020;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 60px;
+    box-shadow: 0px 0px 25px #111111;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .top-bar {
     position: absolute;
@@ -90,6 +112,31 @@ body {
     justify-content: center;
     align-items: center;
 }
+.circle-year {
+    width: 180px;
+    height: 70px;
+    background-color: #DA0037;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-year2 {
+    width: 180px;
+    height: 70px;
+    background-color: #DA0037;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#year-miladi , #year-shamsi {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0px;
+    text-align: center;
+    color: #000000;
+}
 .circle p {
     font-size: 70px;
     margin: 0px;
@@ -124,12 +171,40 @@ body {
     flex-direction: column;
     right: -35px;
 }
+.buttons2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: -35px;
+}
 .buttons button {
     border: none;
     width: 20px;
     height: 20px;
     border-radius: 50px;
     margin: 5px;
+}
+.buttons2 button {
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colors {
+    color: #8a0022;
+}
+.colors2 {
+    color: #44006b;
+}
+.colors3 {
+    color: #000d86;
+}
+.colors4 {
+    color: #007032;
 }
 /* .......................... */
 .btn5 {

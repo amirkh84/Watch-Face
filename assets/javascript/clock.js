@@ -74,10 +74,16 @@ function dark() {
 function dark2() {
     let clk = document.getElementById("clk-body");
     clk.classList.toggle("light-mode");
+    let yyear = document.getElementById("year-body");
+    yyear.classList.toggle("light-mode");
     let date2 = document.getElementById("date-body2");
     date2.classList.toggle("light-mode");
     let mnt = document.getElementById("minute");
     mnt.classList.toggle("light-text");
+    let miladi = document.getElementById("year-miladi");
+    miladi.classList.toggle("light-hour");
+    let shamsi = document.getElementById("year-shamsi");
+    shamsi.classList.toggle("light-hour");
     let body = document.body;
     body.classList.toggle("light-body");
     let btn = document.getElementById("color-btn5");
@@ -122,7 +128,7 @@ switch (month) {
 document.getElementById("month").innerHTML = dayy;
 let dds = {day: 'numeric'};
 function iransdate() {
-    imday = new Date().toLocaleDateString('fa-IR', dds).replace(/([۰-۹])/g, token => String.fromCharCode(token.charCodeAt(0) - 1728));
+    let imday = new Date().toLocaleDateString('fa-IR', dds).replace(/([۰-۹])/g, token => String.fromCharCode(token.charCodeAt(0) - 1728));
     document.getElementById("day-iran").innerHTML = imday;
 }
 iransdate();
@@ -155,4 +161,60 @@ function dark() {
     document.getElementById("circle-date").style.backgroundColor = "#00da62";
     let body = document.body;
     body.style.backgroundColor = "#F2EFEA";
+}
+function year() {
+    let year = new Date().getFullYear();
+    document.getElementById("year-miladi").innerHTML = year;
+    let dds = {year: 'numeric'};
+    let iryear = new Date().toLocaleDateString('fa-IR', dds).replace(/([۰-۹])/g, token => String.fromCharCode(token.charCodeAt(0) - 1728));
+    document.getElementById("year-shamsi").innerHTML = iryear;
+}
+year();
+function themey() {
+    document.getElementById("circle-year").style.backgroundColor = "#DA0037";
+    document.getElementById("year-miladi").style.color = "black";
+    let rem = document.getElementById("year-miladi");
+    rem.classList.remove("lightgreen-number")
+}
+function themey1() {
+    document.getElementById("circle-year").style.backgroundColor = "#7300b6";
+    document.getElementById("year-miladi").style.color = "black";
+    let rem = document.getElementById("year-miladi");
+    rem.classList.remove("lightgreen-number")
+}
+function themey2() {
+    document.getElementById("circle-year").style.backgroundColor = "#0016da";
+    document.getElementById("year-miladi").style.color = "#eeff00";
+    let rem = document.getElementById("year-miladi");
+    rem.classList.remove("lightgreen-number")
+}
+function themey3() {
+    document.getElementById("circle-year").style.backgroundColor = "#00da62";
+    document.getElementById("year-miladi").style.color = "black";
+    let lightgreen = document.getElementById("year-miladi");
+    lightgreen.classList.add("lightgreen-number")
+}
+function theme10() {
+    document.getElementById("circle-year2").style.backgroundColor = "#DA0037";
+    document.getElementById("year-shamsi").style.color = "black";
+    let rem = document.getElementById("year-shamsi");
+    rem.classList.remove("lightgreen-number")
+}
+function theme11() {
+    document.getElementById("circle-year2").style.backgroundColor = "#7300b6";
+    document.getElementById("year-shamsi").style.color = "black";
+    let rem = document.getElementById("year-shamsi");
+    rem.classList.remove("lightgreen-number")
+}
+function theme12() {
+    document.getElementById("circle-year2").style.backgroundColor = "#0016da";
+    document.getElementById("year-shamsi").style.color = "#eeff00";
+    let rem = document.getElementById("year-shamsi");
+    rem.classList.remove("lightgreen-number")
+}
+function theme13() {
+    document.getElementById("circle-year2").style.backgroundColor = "#00da62";
+    document.getElementById("year-shamsi").style.color = "black";
+    let lightgreen = document.getElementById("year-shamsi");
+    lightgreen.classList.add("lightgreen-number")
 }

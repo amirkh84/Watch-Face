@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODAY</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="https://kit.fontawesome.com/147855b922.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="clock-body" id="clk-body">
-        <div class="top-bar">
-            <h3>CLOCK</h3>
-        </div>
-        <div class="main">
-            <div class="circle" id="circle">
-                <p id="hour"></p>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TODAY</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <script src="https://kit.fontawesome.com/147855b922.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="all">
+            <div class="clock-body" id="clk-body">
+                <div class="top-bar">
+                    <h3>CLOCK</h3>
+                </div>
+                <div class="main">
+                    <div class="circle" id="circle">
+                        <p id="hour"></p>
+                    </div>
+                    <div class="minute">
+                        <p id="minute"></p>
+                    </div>
+                </div>
+                <div class="bottom-bar">
+                    <p id="day"></p>
+                </div>
+                <section class="buttons">
+                    <button onclick="theme()" class="btn1"></button>
+                    <button onclick="theme1()" class="btn2"></button>
+                    <button onclick="theme2()" class="btn3"></button>
+                    <button onclick="theme3()" class="btn4"></button>
+                    <button onclick="dark2()" id="color-btn5" class="btn5"><i class="fas fa-sun icon" id="icon"></i></button>
+                </section>
             </div>
-            <div class="minute">
-                <p id="minute"></p>
+            <div class="date-body2" id="date-body2">
+                <div class="top-bar">
+                    <h3>DATE</h3>
+                </div>
+                <div class="circle-date" id="circle-date">
+                    <p id="day-iran"></p>
+                </div>
+                <div class="bottom-bar2">
+                    <p id="month"></p>
+                </div>
+                <section class="buttons">
+                    <button onclick="themed()" class="btn1"></button>
+                    <button onclick="themed1()" class="btn2"></button>
+                    <button onclick="themed2()" class="btn3"></button>
+                    <button onclick="themed3()" class="btn4"></button>
+                </section>
             </div>
-        </div>
-        <div class="bottom-bar">
-            <p id="day"></p>
-        </div>
-        <section class="buttons">
-            <button onclick="theme()" class="btn1"></button>
-            <button onclick="theme1()" class="btn2"></button>
-            <button onclick="theme2()" class="btn3"></button>
-            <button onclick="theme3()" class="btn4"></button>
-            <button onclick="dark2()" id="color-btn5" class="btn5"><i class="fas fa-sun icon" id="icon"></i></button>
+            <div class="year-body" id="year-body">
+                <div class="top-bar">
+                    <h3>YEAR</h3>
+                </div>
+                <div class="circle-year" id="circle-year">
+                    <p id="year-miladi"></p>
+                </div>
+                <div class="circle-year2" id="circle-year2">
+                    <p id="year-shamsi"></p>
+                </div>
+                <div class="bottom-bar2">
+                    <p style="font-size: 15px;">INFO</p>
+                </div>
+                <section class="buttons">
+                    <button onclick="themey()" class="btn1"></button>
+                    <button onclick="themey1()" class="btn2"></button>
+                    <button onclick="themey2()" class="btn3"></button>
+                    <button onclick="themey3()" class="btn4"></button>
+                </section>
+                <section class="buttons2">
+                    <button onclick="theme10()" class="btn1"><i class="fas fa-circle colors"></i></button>
+                    <button onclick="theme11()" class="btn2"><i class="fas fa-circle colors2"></i></button>
+                    <button onclick="theme12()" class="btn3"><i class="fas fa-circle colors3"></i></button>
+                    <button onclick="theme13()" class="btn4"><i class="fas fa-circle colors4"></i></button>
+                </section>
+            </div>
+            <script src="assets/javascript/clock.js"></script>
         </section>
-    </div>
-    <div class="date-body2" id="date-body2">
-        <div class="top-bar">
-            <h3>DATE</h3>
-        </div>
-        <div class="circle-date" id="circle-date">
-            <p id="day-iran"></p>
-        </div>
-        <div class="bottom-bar2">
-            <p id="month"></p>
-        </div>
-        <section class="buttons">
-            <button onclick="themed()" class="btn1"></button>
-            <button onclick="themed1()" class="btn2"></button>
-            <button onclick="themed2()" class="btn3"></button>
-            <button onclick="themed3()" class="btn4"></button>
-        </section>
-    </div>
-    <script src="assets/javascript/clock.js"></script>
-</body>
+    </body>
 </html>
